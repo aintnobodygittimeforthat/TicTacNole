@@ -92,8 +92,8 @@ public class TicTacToe
                 player = SpaceStatus.PLAYER2;
             }
             
-            //checks cols for winners
-            for (int j = 0; j < 3; j += 3)
+            //checks rows for winners
+            for (int j = 0; j < 7; j += 3)
             {
                 if (gameBoard[j] == player)
                 {
@@ -107,7 +107,7 @@ public class TicTacToe
                 }
             }
             
-            //checks rows for winners
+            //checks cols for winners
             for (int k = 0; k < 3; ++k)
             {
                 if (gameBoard[k] == player)
